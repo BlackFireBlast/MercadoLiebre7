@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercadoLiebre:Login</title>
+
+    <!--Iconos-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+
+
+    <!-- Los proximos 3 links se obtuvieron de google fonts para poder usar roboto-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+<!-- Recomendable poner el link de styles hasta el final-->
+<link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <section class="barraLogo">
+        <p class="logo"><img src="static/images/logo-mercado-liebre.svg"/></p>
+        <div class="barra" action="#" method="GET">
+            <div class="input">Buscar productos, marcas y más</div>
+            <div class="submit"><i class="fa fa-search"></i></div>
+        </div>
+        <p class="compraCuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </section>
+        
+    <nav>
+        <nav class="nav1">
+            <p><a href='/'>Ofertas</a></p>
+            <p><a href='#'>Tiendas oficiales</a></p>
+            <p><a href='#'>Vender</a></p>
+            <p><a href='#'>Ayuda</a></p>
+        </nav>
+        <nav class="nav2">
+            <div><a href='/Register'>Crea tu cuenta</a>
+            <span class="iconoCuenta"><i class="far fa-address-card"></i></span>
+            </div>
+            
+            <div><a href='/login'>Ingresa</a>
+                <i class="fas fa-sign-in-alt"></i>
+            </div>
+            <div><a href='#'>Mis compras</a><i class="fas fa-shopping-basket"></i></div>
+        
+        </nav>
+        </nav>
+
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+            
+        </div>
+    </header>
+
+    <section><img src="static/images/img-home-banner.jpg"alt="banner"></section>
+   
+    <main>
+
+        <form >
+            <input type="text" placeholder="Nombre de usuario" pattern="\S{3-20}" required>
+            <br><br>
+            <input type="password" placeholder="Contraseña(min 8 caracteres)" pattern="\S{8-20}" required>
+            <br><br>
+
+            <button class="botonEnviarLogin" type="submit">
+                Enviar
+            </button>
+            
+
+
+
+        </form>
+    </main>
+    
+</body>
+</html>

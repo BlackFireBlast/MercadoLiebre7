@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercadoLiebre:Registro</title>
+
+    <!--Iconos-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+
+
+    <!-- Los proximos 3 links se obtuvieron de google fonts para poder usar roboto-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+<!-- Recomendable poner el link de styles hasta el final-->
+<link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <section class="barraLogo">
+        <p class="logo"><img src="static/images/logo-mercado-liebre.svg"/></p>
+        <div class="barra" action="#" method="GET">
+            <div class="input">Buscar productos, marcas y más</div>
+            <div class="submit"><i class="fa fa-search"></i></div>
+        </div>
+        <p class="compraCuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </section>
+        
+    <nav>
+        <nav class="nav1">
+            <p><a href='/'>Ofertas</a></p>
+            <p><a href='#'>Tiendas oficiales</a></p>
+            <p><a href='#'>Vender</a></p>
+            <p><a href='#'>Ayuda</a></p>
+        </nav>
+        <nav class="nav2">
+            <div><a href='/Register'>Crea tu cuenta</a>
+            <span class="iconoCuenta"><i class="far fa-address-card"></i></span>
+            </div>
+            
+            <div><a href='/login'>Ingresa</a>
+                <i class="fas fa-sign-in-alt"></i>
+            </div>
+            <div><a href='#'>Mis compras</a><i class="fas fa-shopping-basket"></i></div>
+        
+        </nav>
+        </nav>
+
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+            
+        </div>
+    </header>
+
+    <section><img src="static/images/img-home-banner.jpg"alt="banner"></section>
+   
+    <main>
+
+        <form  action="/" method="GET">
+            <input type="text" placeholder="Nombre y apellido"  pattern="\S{3-20}" required>
+            <br>
+            <input type="text" placeholder="Nombre de usuario" pattern="\S{3-20}" required>
+            <br>
+            <input type="email" placeholder="E-mail" pattern="\S{3-20}" required>
+            <br>
+            <br>
+
+            <label for="dob" >Fecha de nacimiento </label>
+            <br>
+            <input type="date" name="dob" pattern="\S{3-20}" required>
+            <br><br><br>
+
+            <textarea name="x" id="domicilio" cols="20" rows="1" >Domicilio</textarea>
+            <br>
+            <br>
+
+            <p>Perfil del usuario</p>
+            <br>
+            
+            <input type="radio" name="enlace" id="comprador" value="comprador" required>
+            <label for="comprador">Comprador</label>
+            <br>
+            <input type="radio" name="enlace" id="vendedor" value="vendedor">
+            <label for="vendedor">Vendedor</label>
+            <br>
+            <br>
+
+            <p for=" ">Intereses</p>
+            <br>
+            <input type="checkbox" id="electro" name="electro" value="electro">
+            <label for="electro">Electro</label>
+            <br>
+            <input type="checkbox" id="moda" name="moda" value="moda">
+            <label for="moda">Moda</label>
+            <br>
+            <input type="checkbox" id="hogar" name="hogar" value="hogar">
+            <label for="hogar">Hogar</label>
+            <br>
+            <input type="checkbox" id="jugue" name="jugue" value="jugue">
+            <label for="jugue">Jugueteria</label>
+            <br>
+            <input type="checkbox" id="vida" name="vida" value="vida">
+            <label for="vida">Vida sana</label>
+            <br><br>
+            <input type="file" id="subirArchivo" name="avatar" accept="image/png, image/jpeg">
+            <br><br>
+            <div><input type="password" id="password" name="password" placeholder="Contraseña" required></div>
+            <div>  <input type="password" id="passwordc" name="passwordc" placeholder="Repetir contraseña" pattern="\S{3-20}" required></div>
+            
+            <button type="submit" >
+                Enviar
+            </button>
+
+            <button type="reset">
+                Borrar
+            </button>
+        
+        </form>
+
+    </main>
+</body>
+</html>

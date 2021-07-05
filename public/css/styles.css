@@ -1,0 +1,242 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+   /*  */ 
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+header{
+    background-color: yellow;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h2{
+    font-size: 19;
+}
+
+
+.precio{
+    font-size: 14px;
+    width: 30%;
+    display: inline-block;
+}
+
+.descuento{
+    color: green;
+    font-size: 12px;
+    width: 70%;
+    display: inline-block;
+}
+.descripcion{
+    opacity: 0%;
+    font-size: 16px;
+}
+
+
+
+.menu{
+    
+    height: 50px;
+    color:blue;
+    text-align: center;
+    
+}
+.menu i{
+    font-size:50px ;
+}
+
+.iconoTarjeta,.iconoRegalo,.iconoUsuario{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:blue;
+    text-align: center;
+}
+
+main{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(175, 174, 174);
+}
+section{
+    background-color: white;
+    margin-bottom:5px;
+/*próxima línea esta relacionada con la posición absoluta del contenedor hijo*/
+    position: relative;
+    
+    
+    
+}
+
+.mora{
+    
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barraLogo{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+background-color: yellow;
+-ms-flex-align: center;
+}
+.logo,.barra{
+    width: 50%;
+    font-size: 10px;
+    display: flex;
+}
+
+.input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+ .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+.botonEnviarLogin:hover{
+    background-color: #0022AA;
+}
+.compraCuotas{
+    width: 100%;
+}
+/*La próxima es para modificar propiedades del icono de la camioneta*/
+ main section section i{
+     font-size: 16px;
+     padding: 5px;
+     width: 30px;
+     height: 30px;
+     border: 1px solid green;
+     background-color: #FFF;
+     border-radius: 50%;
+     position: absolute;
+     right: 28px;
+    top: -15px;
+    color: green;
+ }
+ @keyframes rotaCamion{
+     0%{
+         transform: rotate(0);
+     }
+     100%{
+         transform: rotate(-90deg);
+     }
+ }
+main section:hover section i{
+    animation: rotaCamion 2s infinite ;
+}
+ /* Modifica la descripción */
+section:hover section p{
+    opacity: 100%;
+}
+/* Modifica la sombra de un articulo */
+main section:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+footer{
+    text-align: center;
+}
+
+nav{
+    display: none;
+}
+/* Register styles */
+#subirArchivo{
+    width: 100%;
+}
+
+
+
+
+@media (min-width:361px){
+    
+    main section{
+        /*Linea para generar una sombra a un contenedor*/
+        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+        margin-right: 10px;
+        width: 40%;
+    }
+    .menu{
+        display: flex; 
+    }
+    h3{
+        width: 100vw;
+    }
+    .mora{
+        width: 100%;
+        
+    }
+    .logo, .barra, .compraCuotas{
+        width: 33%;
+       font-size: 12px;
+    }
+    .menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav1,.nav2{
+        width: 47%;
+    }
+}
+
+@media(min-width:769px){
+    
+    main section{
+        width: 22%;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tarjeta, .regalo, .usuario{
+        width: 33%;
+        padding-top: 20px;
+    }
+    .iconoTarjeta:hover, .iconoRegalo:hover, .iconoUsuario:hover{
+        color:blueviolet
+    }
+    .Copyright{
+        width: 100%;
+        padding: 10px 10px;
+    }
+}
